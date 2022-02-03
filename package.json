@@ -1,0 +1,23 @@
+{
+  "name": "32-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeataJ/typescript-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeataJ/typescript-project/issues"
+  },
+  "homepage": "https://github.com/BeataJ/typescript-project#readme",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
