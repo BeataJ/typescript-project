@@ -50,4 +50,5 @@ people = [
 
 // type inference
 
-let course = 'React- the course';
+let course: string | number  = 'React- the course';
+course = 12345;
