@@ -36,3 +36,14 @@ let people: {
     name: string,
     age: number
 }[];
+
+people = [
+    {
+        name: 'bob',
+        age: 56
+    },
+    {
+        name: 'beata',
+        age: 55
+    }
+]
