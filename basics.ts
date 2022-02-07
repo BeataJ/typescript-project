@@ -64,3 +64,14 @@ function add(a: number, b:number) {
 function printOut(value: any) {
     console.log(value);
 }
+
+// Generic
+
+function insertAtBeginning<T>(array: T[], value:T) {
+    const newArray = [value, ...array];
+    return newArray;
+}
+
+const demoArray = [1,2,3];
+
+const updatedArray = insertAtBeginning(demoArray,-1);
