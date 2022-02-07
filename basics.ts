@@ -27,6 +27,8 @@ type Person = {
     age: number;
 };
 
+type Unit = string | number;
+
 let person: Person;
 
 person = {
@@ -50,5 +52,15 @@ people = [
 // type inference
 
 // union type
-let course: string | number  = 'React- the course';
+let course: Unit = "React- the course";
 course = 12345;
+
+// Function & types
+
+function add(a: number, b:number) {
+    return a + b;
+}
+
+function printOut(value: any) {
+    console.log(value);
+}
