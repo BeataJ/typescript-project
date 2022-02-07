@@ -77,23 +77,25 @@ const demoArray = [1,2,3];
 const updatedArray = insertAtBeginning(demoArray,-1);
 
 class Student {
-    firstName: string;
-    lastName: string;
-    age: number;
-    courses: string[]
+    // firstName: string;
+    // lastName: string;
+    // age: number;
+    // private courses: string[]
 
-    constructor(first:string,last:string,age:number,courses:string[]) {
-        this.firstName = first;
-        this.lastName = last;
-        this.age = age;
-        this.courses = courses
+    constructor(public firstName:string,public lastName:string, public age:number,private courses:string[]) {
+        
     }
 
     enroll(courseName: string){
         this.courses.push(courseName);
+    }
+    
+    listCourses(){
+        return this.courses.slice();
     }
 }
 
 const student = new Student('beata','jasin',90,['Angular']);
 student.enroll('react');
 console.log(student);
+student.listCourses();
