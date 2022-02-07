@@ -2,6 +2,8 @@
 // More complex types: arrays, objects
 // Function types, parameters
 
+import { getJSDocReturnTag } from "typescript";
+
 // Primitves
 
 let age: number;
@@ -99,3 +101,24 @@ const student = new Student('beata','jasin',90,['Angular']);
 student.enroll('react');
 console.log(student);
 student.listCourses();
+
+// interface
+
+interface Human {
+    firstName: string;
+    age: number;
+
+    greet: () => void;
+}
+
+let max: Human;
+
+max = {
+    firstName: 'beata',
+    age: 100,
+
+    greet() {
+        console.log('hello');
+    }
+    
+}
