@@ -1,3 +1,4 @@
+"use strict";
 // Primitives: number, string, boolean
 // More complex types: arrays, objects
 // Function types, parameters
@@ -10,6 +11,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+exports.__esModule = true;
 // Primitves
 var age;
 age = 12;
@@ -55,17 +57,38 @@ function insertAtBeginning(array, value) {
 var demoArray = [1, 2, 3];
 var updatedArray = insertAtBeginning(demoArray, -1);
 var Student = /** @class */ (function () {
-    function Student(first, last, age, courses) {
-        this.firstName = first;
-        this.lastName = last;
+    // firstName: string;
+    // lastName: string;
+    // age: number;
+    // private courses: string[]
+    function Student(firstName, lastName, age, courses) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
         this.courses = courses;
     }
     Student.prototype.enroll = function (courseName) {
         this.courses.push(courseName);
     };
+    Student.prototype.listCourses = function () {
+        return this.courses.slice();
+    };
     return Student;
 }());
 var student = new Student('beata', 'jasin', 90, ['Angular']);
 student.enroll('react');
 console.log(student);
+student.listCourses();
+var max;
+max = {
+    firstName: 'beata',
+    age: 100,
+    greet: function () {
+        console.log('hello');
+    }
+};
+var Instructor = /** @class */ (function () {
+    function Instructor() {
+    }
+    return Instructor;
+}());
