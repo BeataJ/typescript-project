@@ -2,7 +2,6 @@
 // More complex types: arrays, objects
 // Function types, parameters
 
-import { getJSDocReturnTag } from "typescript";
 
 // Primitves
 
@@ -124,7 +123,9 @@ max = {
 }
 
 class Instructor implements Human {
-    firstName: string;
-    age: number;
-    greet: () => void;
+    firstName= 'beata';
+    age = 33;
+    greet() {
+        console.log('hi')
+    }
 }

@@ -89,6 +89,11 @@ max = {
 };
 var Instructor = /** @class */ (function () {
     function Instructor() {
+        this.firstName = 'beata';
+        this.age = 33;
     }
+    Instructor.prototype.greet = function () {
+        console.log('hi');
+    };
     return Instructor;
 }());
