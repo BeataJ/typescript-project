@@ -75,3 +75,25 @@ function insertAtBeginning<T>(array: T[], value:T) {
 const demoArray = [1,2,3];
 
 const updatedArray = insertAtBeginning(demoArray,-1);
+
+class Student {
+    firstName: string;
+    lastName: string;
+    age: number;
+    courses: string[]
+
+    constructor(first:string,last:string,age:number,courses:string[]) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.courses = courses
+    }
+
+    enroll(courseName: string){
+        this.courses.push(courseName);
+    }
+}
+
+const student = new Student('beata','jasin',90,['Angular']);
+student.enroll('react');
+console.log(student);
