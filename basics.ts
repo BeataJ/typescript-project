@@ -122,3 +122,9 @@ max = {
     }
     
 }
+
+class Instructor implements Human {
+    firstName: string;
+    age: number;
+    greet: () => void;
+}
